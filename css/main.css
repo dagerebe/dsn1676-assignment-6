@@ -176,6 +176,16 @@ div {
   color: mediumpurple;
 }
 
+li {
+    max-height: 0;
+  overflow: hidden;
+  transition: all 400ms linear;
+   max-height: 3em;
+}
+
+.js-open-list {
+   max-height: 0em;
+}
 
 
 
