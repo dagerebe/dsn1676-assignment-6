@@ -85,10 +85,71 @@ div {
 .circle {
   height: 100px;
   top: calc(50% - 50px);
+  left: 450px;
   width: 100px;
+  position: absolute;
 
   background-color: orange;
   border-radius: 50%;
+}
+
+.js-circle-bounce{
+  -webkit-animation:  circle-bounce 1s linear;
+  animation:  circle-bounce 1s linear;
+}
+
+@-webkit-keyframes circle-bounce {
+  0% {
+    left: 420px;
+    top: 20px;
+  }
+  20% {
+    left: 390px;
+    top: 10px;
+  }
+  50% {
+    left: 370px;
+    top: 20px;
+  }
+  80% {
+    left: 360px;
+    top: 10px;
+  }
+  90% {
+    left: 355px;
+    top: 20px;
+  }
+  100% {
+    left: 350px;
+    top: 10px;
+  }
+}
+
+@keyframes circle-bounce {
+  0% {
+    left: 420px;
+    top: 20px;
+  }
+  20% {
+    left: 390px;
+    top: 10px;
+  }
+  50% {
+    left: 370px;
+    top: 20px;
+  }
+  80% {
+    left: 360px;
+    top: 10px;
+  }
+  90% {
+    left: 355px;
+    top: 20px;
+  }
+  100% {
+    left: 350px;
+    top: 10px;
+  }
 }
 
 .list {
@@ -103,6 +164,7 @@ div {
   border: 1px solid #ccc;
   overflow: hidden;
   overflow-y: auto;
+
 }
 
 .list li {
@@ -113,3 +175,10 @@ div {
 
   color: mediumpurple;
 }
+
+
+
+
+
+
+
